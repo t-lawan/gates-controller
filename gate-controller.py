@@ -1,7 +1,7 @@
 import csv
 import os
 from action import Action
-from action import Action
+from client import Client
 import time
 import sys
 
@@ -59,6 +59,8 @@ class GateController:
             # Take a break
         else:
             print("RUNNING TASK")
+            clientClass = Client()
+            clientClass.send(schedule_action)
         
         
     def run_schedule(self):
