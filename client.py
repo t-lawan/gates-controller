@@ -18,7 +18,7 @@ class Client:
 
     def set_ip(self, schedule_action):
         if schedule_action.gate_id == "GATE_1":
-            self.ip = "192.168.1.1"
+            self.ip = "169.254.1.10"
         elif schedule_action.gate_id == "GATE_2":
             self.ip = "192.168.1.2"
         elif schedule_action.gate_id == "GATE_3":
